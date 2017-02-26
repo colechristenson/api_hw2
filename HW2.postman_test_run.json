@@ -1,0 +1,557 @@
+{
+	"id": "fb564de6-7ebb-4f00-9ca4-69b8c5be493c",
+	"name": "HW2",
+	"allTests": [],
+	"timestamp": "2017-02-26T03:38:08.218Z",
+	"collection_id": "59099893-3925-a1e7-15ad-38a0dbedf68a",
+	"folder_id": 0,
+	"target_type": "collection",
+	"environment_id": "e9b1b9c0-af9c-6a76-e3ef-2618ee41b5d9",
+	"data": [],
+	"delay": 0,
+	"count": 1,
+	"collection": {
+		"id": "59099893-3925-a1e7-15ad-38a0dbedf68a",
+		"name": "HW2",
+		"description": "Tests againsts the node.js server I made",
+		"order": [
+			"9d4ef3c4-cd79-3376-9a32-498126428c24",
+			"40af596d-d85a-61a8-a207-f2517a8931cb",
+			"056da018-8b9c-ff9a-f1cf-6630091d8704",
+			"b0bc95e5-5e91-afd6-c095-7c647ed25df0",
+			"c75cf263-5b91-738f-4230-45959ec8a130",
+			"deb37f75-1a54-b866-2f74-3d8cfedb12bf",
+			"4f795afc-4df4-d390-6afb-40ca04b13084",
+			"08b2ee3b-0d9c-51f4-6169-6fa786a3f362",
+			"1236d957-3422-0f58-277a-7c1a1d8bb4d9"
+		],
+		"folders": [],
+		"timestamp": 0,
+		"synced": true,
+		"remote_id": "0",
+		"owner": "1510738",
+		"sharedWithTeam": false,
+		"subscribed": false,
+		"remoteLink": null,
+		"remoteLinkUpdatedAt": null,
+		"public": false,
+		"createdAt": "2017-02-23T20:12:28.000Z",
+		"updatedAt": 1488080261292,
+		"write": true,
+		"published": false,
+		"favorite": false,
+		"permissions": {},
+		"syncedPermissions": {}
+	},
+	"folder": null,
+	"environment": null,
+	"globals": [
+		{
+			"key": "book_title",
+			"value": "Turing",
+			"enabled": true,
+			"type": "text"
+		},
+		{
+			"key": "book_id_nums",
+			"value": "BlPZ3sHHWpMC,w4YSDAAAQBAJ,dSUTDAAAQBAJ,QJyX175VCj8C,waj6-DavmX4C,C9WQbm4ovFoC,HyMcH_9eTtoC,csHaAAAAMAAJ,CEMYUU_HFMAC,0IIsoRqw9hgC",
+			"enabled": true,
+			"type": "text"
+		}
+	],
+	"results": [
+		{
+			"name": "GET to /gets",
+			"id": "9d4ef3c4-cd79-3376-9a32-498126428c24",
+			"url": "https://colechristenson11-test.apigee.net/hw2/gets?q=cole",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code 200": true
+			},
+			"testPassFailCounts": {
+				"Status code 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"321"
+			],
+			"allTests": [
+				{
+					"Status code 200": true
+				}
+			],
+			"time": "321",
+			"totalRequestTime": "321",
+			"iterationResults": {}
+		},
+		{
+			"name": "POST to /posts",
+			"id": "40af596d-d85a-61a8-a207-f2517a8931cb",
+			"url": "https://colechristenson11-test.apigee.net/hw2/posts",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code 200": true
+			},
+			"testPassFailCounts": {
+				"Status code 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"114"
+			],
+			"allTests": [
+				{
+					"Status code 200": true
+				}
+			],
+			"time": "114",
+			"totalRequestTime": "114",
+			"iterationResults": {}
+		},
+		{
+			"name": "PUT to /puts",
+			"id": "056da018-8b9c-ff9a-f1cf-6630091d8704",
+			"url": "https://colechristenson11-test.apigee.net/hw2/puts?q=cole&w=christenson",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code 200": true
+			},
+			"testPassFailCounts": {
+				"Status code 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"117"
+			],
+			"allTests": [
+				{
+					"Status code 200": true
+				}
+			],
+			"time": "117",
+			"totalRequestTime": "117",
+			"iterationResults": {}
+		},
+		{
+			"name": "DELETE to /deletes",
+			"id": "b0bc95e5-5e91-afd6-c095-7c647ed25df0",
+			"url": "https://colechristenson11-test.apigee.net/hw2/deletes?q=word",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code 200": true
+			},
+			"testPassFailCounts": {
+				"Status code 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"119"
+			],
+			"allTests": [
+				{
+					"Status code 200": true
+				}
+			],
+			"time": "119",
+			"totalRequestTime": "119",
+			"iterationResults": {}
+		},
+		{
+			"name": "GET to /posts",
+			"id": "c75cf263-5b91-738f-4230-45959ec8a130",
+			"url": "https://colechristenson11-test.apigee.net/hw2/posts?q=cole",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 405,
+				"name": "Method Not Allowed",
+				"detail": {
+					"name": "Method Not Allowed",
+					"detail": "A request was made of a resource using a request method not supported by that resource; for example, using GET on a form which requires data to be presented via POST, or using PUT on a read-only resource."
+				}
+			},
+			"tests": {
+				"Status code 200": false
+			},
+			"testPassFailCounts": {
+				"Status code 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				"100"
+			],
+			"allTests": [
+				{
+					"Status code 200": false
+				}
+			],
+			"time": "100",
+			"totalRequestTime": "100",
+			"iterationResults": {}
+		},
+		{
+			"name": "POST to /puts",
+			"id": "deb37f75-1a54-b866-2f74-3d8cfedb12bf",
+			"url": "https://colechristenson11-test.apigee.net/hw2/puts",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 405,
+				"name": "Method Not Allowed",
+				"detail": {
+					"name": "Method Not Allowed",
+					"detail": "A request was made of a resource using a request method not supported by that resource; for example, using GET on a form which requires data to be presented via POST, or using PUT on a read-only resource."
+				}
+			},
+			"tests": {
+				"Status code 200": false
+			},
+			"testPassFailCounts": {
+				"Status code 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				"96"
+			],
+			"allTests": [
+				{
+					"Status code 200": false
+				}
+			],
+			"time": "96",
+			"totalRequestTime": "96",
+			"iterationResults": {}
+		},
+		{
+			"name": "PUT to /gets",
+			"id": "4f795afc-4df4-d390-6afb-40ca04b13084",
+			"url": "https://colechristenson11-test.apigee.net/hw2/gets?q=cole",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 405,
+				"name": "Method Not Allowed",
+				"detail": {
+					"name": "Method Not Allowed",
+					"detail": "A request was made of a resource using a request method not supported by that resource; for example, using GET on a form which requires data to be presented via POST, or using PUT on a read-only resource."
+				}
+			},
+			"tests": {
+				"Status code 200": false
+			},
+			"testPassFailCounts": {
+				"Status code 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				"101"
+			],
+			"allTests": [
+				{
+					"Status code 200": false
+				}
+			],
+			"time": "101",
+			"totalRequestTime": "101",
+			"iterationResults": {}
+		},
+		{
+			"name": "DELETE to /gets",
+			"id": "08b2ee3b-0d9c-51f4-6169-6fa786a3f362",
+			"url": "https://colechristenson11-test.apigee.net/hw2/gets?q=cole",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 405,
+				"name": "Method Not Allowed",
+				"detail": {
+					"name": "Method Not Allowed",
+					"detail": "A request was made of a resource using a request method not supported by that resource; for example, using GET on a form which requires data to be presented via POST, or using PUT on a read-only resource."
+				}
+			},
+			"tests": {
+				"Status code 200": false
+			},
+			"testPassFailCounts": {
+				"Status code 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				"93"
+			],
+			"allTests": [
+				{
+					"Status code 200": false
+				}
+			],
+			"time": "93",
+			"totalRequestTime": "93",
+			"iterationResults": {}
+		},
+		{
+			"name": "GET to /",
+			"id": "1236d957-3422-0f58-277a-7c1a1d8bb4d9",
+			"url": "https://colechristenson11-test.apigee.net/hw2",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 405,
+				"name": "Method Not Allowed",
+				"detail": {
+					"name": "Method Not Allowed",
+					"detail": "A request was made of a resource using a request method not supported by that resource; for example, using GET on a form which requires data to be presented via POST, or using PUT on a read-only resource."
+				}
+			},
+			"tests": {
+				"Status code 200": false
+			},
+			"testPassFailCounts": {
+				"Status code 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				"92"
+			],
+			"allTests": [
+				{
+					"Status code 200": false
+				}
+			],
+			"time": "92",
+			"totalRequestTime": "92",
+			"iterationResults": {}
+		}
+	],
+	"totalPass": 4,
+	"totalFail": 5,
+	"totalTime": 1153,
+	"lifecycle": "done",
+	"requests": [
+		{
+			"name": "GET to /gets",
+			"id": "9d4ef3c4-cd79-3376-9a32-498126428c24",
+			"url": "https://colechristenson11-test.apigee.net/hw2/gets?q=cole",
+			"time": "2017-02-26T03:38:08.218Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "POST to /posts",
+			"id": "40af596d-d85a-61a8-a207-f2517a8931cb",
+			"url": "https://colechristenson11-test.apigee.net/hw2/posts",
+			"time": "2017-02-26T03:38:08.218Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "PUT to /puts",
+			"id": "056da018-8b9c-ff9a-f1cf-6630091d8704",
+			"url": "https://colechristenson11-test.apigee.net/hw2/puts?q=cole&w=christenson",
+			"time": "2017-02-26T03:38:08.218Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "DELETE to /deletes",
+			"id": "b0bc95e5-5e91-afd6-c095-7c647ed25df0",
+			"url": "https://colechristenson11-test.apigee.net/hw2/deletes?q=word",
+			"time": "2017-02-26T03:38:08.218Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "GET to /posts",
+			"id": "c75cf263-5b91-738f-4230-45959ec8a130",
+			"url": "https://colechristenson11-test.apigee.net/hw2/posts?q=cole",
+			"time": "2017-02-26T03:38:08.218Z",
+			"responseCode": {
+				"code": 405,
+				"name": "Method Not Allowed",
+				"detail": {
+					"name": "Method Not Allowed",
+					"detail": "A request was made of a resource using a request method not supported by that resource; for example, using GET on a form which requires data to be presented via POST, or using PUT on a read-only resource."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			}
+		},
+		{
+			"name": "POST to /puts",
+			"id": "deb37f75-1a54-b866-2f74-3d8cfedb12bf",
+			"url": "https://colechristenson11-test.apigee.net/hw2/puts",
+			"time": "2017-02-26T03:38:08.218Z",
+			"responseCode": {
+				"code": 405,
+				"name": "Method Not Allowed",
+				"detail": {
+					"name": "Method Not Allowed",
+					"detail": "A request was made of a resource using a request method not supported by that resource; for example, using GET on a form which requires data to be presented via POST, or using PUT on a read-only resource."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			}
+		},
+		{
+			"name": "PUT to /gets",
+			"id": "4f795afc-4df4-d390-6afb-40ca04b13084",
+			"url": "https://colechristenson11-test.apigee.net/hw2/gets?q=cole",
+			"time": "2017-02-26T03:38:08.218Z",
+			"responseCode": {
+				"code": 405,
+				"name": "Method Not Allowed",
+				"detail": {
+					"name": "Method Not Allowed",
+					"detail": "A request was made of a resource using a request method not supported by that resource; for example, using GET on a form which requires data to be presented via POST, or using PUT on a read-only resource."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			}
+		},
+		{
+			"name": "DELETE to /gets",
+			"id": "08b2ee3b-0d9c-51f4-6169-6fa786a3f362",
+			"url": "https://colechristenson11-test.apigee.net/hw2/gets?q=cole",
+			"time": "2017-02-26T03:38:08.218Z",
+			"responseCode": {
+				"code": 405,
+				"name": "Method Not Allowed",
+				"detail": {
+					"name": "Method Not Allowed",
+					"detail": "A request was made of a resource using a request method not supported by that resource; for example, using GET on a form which requires data to be presented via POST, or using PUT on a read-only resource."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			}
+		},
+		{
+			"name": "GET to /",
+			"id": "1236d957-3422-0f58-277a-7c1a1d8bb4d9",
+			"url": "https://colechristenson11-test.apigee.net/hw2",
+			"time": "2017-02-26T03:38:08.218Z",
+			"responseCode": {
+				"code": 405,
+				"name": "Method Not Allowed",
+				"detail": {
+					"name": "Method Not Allowed",
+					"detail": "A request was made of a resource using a request method not supported by that resource; for example, using GET on a form which requires data to be presented via POST, or using PUT on a read-only resource."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			}
+		}
+	],
+	"synced": false
+}
