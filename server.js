@@ -1,34 +1,57 @@
-//for using http only not very helpful though
+//Cole Christenson
 
-// //get the http and fiesystem modules
-// var http = require('http'),
-//   fs = require('fs');
+var express = require('express')
+var app = express()
 
-// //create our server using the http module
-// http.createServer(function(req, res){
+//Function that will take req and return JSON with messages, queries, and headers
+function make_return_json(req){
+	var temp_json = {'Messages': [],
+					 'Queries': req.query,       //adds queries into return json even if empty
+					 'Headers': req.headers};   //adds headers into return json
 
-// 	//write to our server. set configuration for the response
-// 	res.writeHead(200, {
-// 		'Content-Type': 'text/html',
-// 		'Access-Control-Allow-Origin' : '*'
-// 	})
+	temp_json['Messages'].push(req.method + ' request acknowledged'); //tells user what the request type is
 
+	if(Object.keys(req.query).length === 0) //if query is empty add message no queries
+	 	temp_json['Messages'].push('No queries');
 
-var express = require('express');
-var app 	= express();
-var path 	= require('path');
+	return temp_json;
+}
 
-//send our index.html file to the user for the home page
-app.get('/', function(req, res){
-	res.sendFile(path.join(__dirname + '/index.html'));
-	console.log(req.method);
+//For correct GET requests to /gets
+app.get('/gets', function(req, res){
+	var temp_json = make_return_json(req);
+	res.json(temp_json);
 });
 
+//for proper POST requests to /posts
 app.post('/posts', function(req, res){
-	res.send('POST request acknowledged')
+	var temp_json = make_return_json(req);
+	res.json(temp_json);
 });
 
+//for proper PUT request to /puts
+app.put('/puts', function(req, res){
+	var temp_json = make_return_json(req);
+	res.json(temp_json);
+});
 
+//for proper DELETE request to /deletes
+app.delete('/deletes', function(req, res){
+	var temp_json = make_return_json(req);
+	res.json(temp_json);
+});
 
-app.listen(1337);
-console.log('Use port 1337')
+//for any request to base URL request and gives status 405
+app.all('/', function(req, res){
+	res.status(405);
+	res.send('Cannot ' + req.method +' request ' + req.protocol + '://' + req.get('host') + '/hw2');
+});
+
+//for any improper request to bad originalUrl (extention)
+//ie Put to /gets will return status 405 and message saying cannot do that
+app.all('/:non_access' , function(req, res){
+	res.status(405);
+	res.send('Cannot ' + req.method + ' request ' + req.protocol + '://' + req.get('host') + '/hw2' + req.originalUrl);
+});
+
+app.listen(); //listens for request
